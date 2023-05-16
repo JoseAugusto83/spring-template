@@ -12,22 +12,19 @@
 <body>
     <div class="cotainer">
         <h1>Livros</h1>
-        <a href="/insert" class="btn btn-primary">Novo livro</a>
+        <a href="/insertGenero" class="btn btn-primary">Novo genero</a>
         <table class="table">
             <tr>
-                <th>Id</th>
-                <th>Titulo</th>
-                <th>Isbn</th>
+                <th>Genero</th>
                 <th>&nbsp;</th>
             </tr>
-            <c:forEach var="item" items="${livros}">
+            <c:forEach var="item" items="${generos}">
                 <tr>
                     <td>${item.id}</td>
-                    <td>${item.titulo}</td>
-                    <td>${item.isbn}</td>
+                    <td>${item.nome}</td>
                     <td>
-                        <a href="/update?id=${item.id}" class="btn btn-warning">Editar</a>
-                        <a href="/delete?id=${item.id}" class="btn btn-danger">Excluir</a>
+                        <a href="/updateGenero?id=${item.id}" class="btn btn-warning">Editar</a>
+                        <a href="/deleteGenero?id=${item.id}" class="btn btn-danger">Excluir</a>
                     </td>
                 </tr>
             </c:forEach>
@@ -35,5 +32,3 @@
     </div>
 
 </body>
-
-</html>
