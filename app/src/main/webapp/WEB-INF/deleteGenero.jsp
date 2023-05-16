@@ -3,7 +3,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Novo Livro</title>
+        <title>Deletar genero</title>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
     <body>

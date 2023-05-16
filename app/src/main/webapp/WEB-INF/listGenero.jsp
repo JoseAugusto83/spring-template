@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="cotainer">
-        <h1>Livros</h1>
+        <h1>Genero</h1>
         <a href="/insertGenero" class="btn btn-primary">Novo genero</a>
         <table class="table">
             <tr>
